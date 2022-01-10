@@ -124,14 +124,14 @@ class Swimming(Training):
 
 def read_package(workout_type: str, data: list) -> Training:
     """Прочитать данные полученные от датчиков."""
-    dict: Dict[str, Type(Training)] = {
+    data_dict: Dict[str, Type[Training]] = {
         'SWM': Swimming,
         'RUN': Running,
         'WLK': SportsWalking
     }
 
-    if workout_type in dict:
-        return dict[workout_type](*data)
+    if workout_type in data_dict:
+        return data_dict[workout_type](*data)
     raise ValueError('There is no accepted training code in the database')
 
 
