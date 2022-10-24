@@ -96,7 +96,7 @@ class SportsWalking(Training):
 class Swimming(Training):
     """Тренировка: плавание."""
 
-    LEN_STEP: float = 1.38                   # Length of one acion in meters
+    LEN_STEP: float = 1.38                   # Length of one action in meters
     COEFF_CALORIE_1: float = 1.1
     COEFF_CALORIE_2: float = 2
 
